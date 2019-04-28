@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+
+        <link rel = "stylesheet" href = "css/index.css" />
+        <title>Smart Light App</title>
+    </head>
+    <body>
+
+      <ul id = "lightBar">
+      <li><a class = "lightHeader">Lights : </a></li>
+
+      </ul>
+
+
+      <label class="switch">
+        <input type="checkbox" id = "check">
+        <span class="slideSwitch" id = "switch"></span>
+
+
+
+      </label>
+
+      <div class="slidecontainer">
+        <input type="range" min="1" max="255" value="50" class="slider" id="myRange">
+      </div>
+
+      <template id = "lightBoxTemplate">
+        <li><a class = "lightButton"> </a></li>
+      </template>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type = "text/javascript" src = "js/index.js"></script>
+    </body>
+</html>
