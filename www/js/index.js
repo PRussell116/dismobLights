@@ -5,6 +5,8 @@ window.onload = (event) => {
   checkPreSets(1);
 
 };
+
+//http://<bridge IP address>/api/<username>/lights/1/state
 let bridgeUrl =
   'http://192.168.1.50/api/gx0g63RCE0IcMp5A3WvjyVST6PDnEBdM3AZGNt0Q' // url of the bridge controlling lights
 selectedLight = 1;
@@ -41,7 +43,7 @@ function addListeners() {
   document.getElementById("myRange").addEventListener('change', sliderMoved);
 
 }
-//http://<bridge IP address>/api/<username>/lights/1/state
+
 
 
 async function checkPreSets(lightNum) {
@@ -122,6 +124,7 @@ function sliderMoved(e) {
 
 
 function lightButtonPressed(e) {
+  // chnage the selected css to be the last button pressed
   let selected = document.getElementsByClassName('selected');
   for (let i = 0; i < selected.length; i++) {
     selected[i].classList.remove("selected");

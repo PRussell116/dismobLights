@@ -71,6 +71,10 @@ input:checked + .slideSwitch:before {
   -webkit-transition: .2s;
   transition: opacity .2s;
 }
+.slider::before {
+  color:black;
+  content: "Brightness";
+}
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
